@@ -1,5 +1,10 @@
 import com.google.inject.AbstractModule
 import java.time.Clock
+import services.{ApplicationTimer}
+import services.IProductService
+import services.ProductService
+import services.ProductService
+
 
 import services.{ApplicationTimer, AtomicCounter, Counter}
 
@@ -23,6 +28,8 @@ class Module extends AbstractModule {
     bind(classOf[ApplicationTimer]).asEagerSingleton()
     // Set AtomicCounter as the implementation for Counter.
     bind(classOf[Counter]).to(classOf[AtomicCounter])
+
+    bind(classOf[IProductService]).to(classOf[ProductService]).asEagerSingleton()
   }
 
 }
