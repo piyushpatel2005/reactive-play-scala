@@ -24,3 +24,12 @@ POST    /review                     controllers.ReviewController.insert
 POST    /review/:id                 controllers.ReviewController.update(id:Long)
 POST    /review/:id/remove          controllers.ReviewController.remove(id:Long)
 GET     /review/details/:id         controllers.ReviewController.details(id:Long)
+
+
+# Image routes
+GET     /image                      controllers.ImageController.index
+GET     /image/add                  controllers.ImageController.blank
+POST    /image/                     controllers.ImageController.insert
+POST    /image/:id                  controllers.ImageController.update(id:Long)
+POST    /image:id/remove            controllers.ImageController.remove(id:Long)
+GET     /image/details/:id          controllers.ImageController.details(id:Long)

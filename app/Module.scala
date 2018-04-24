@@ -26,7 +26,7 @@ class Module extends AbstractModule {
 
     bind(classOf[IProductService]).to(classOf[ProductService]).asEagerSingleton()
     bind(classOf[IReviewService]).to(classOf[ReviewService]).asEagerSingleton()
-
+    bind(classOf[IImageService]).to(classOf[ImageService]).asEagerSingleton()
   }
 
 }
