@@ -14,3 +14,13 @@ POST    /product                    controllers.ProductController.insert
 POST    /product/:id                controllers.ProductController.update(id:Long)
 POST    /product/:id/remove         controllers.ProductController.remove(id:Long)
 GET     /product/details/:id        controllers.ProductController.details(id:Long)
+
+
+
+# Reviews routes
+GET     /review                     controllers.ReviewController.index
+GET     /review/add                 controllers.ReviewController.blank
+POST    /review                     controllers.ReviewController.insert
+POST    /review/:id                 controllers.ReviewController.update(id:Long)
+POST    /review/:id/remove          controllers.ReviewController.remove(id:Long)
+GET     /review/details/:id         controllers.ReviewController.details(id:Long)
